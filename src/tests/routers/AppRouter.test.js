@@ -5,12 +5,12 @@ import { AuthContext } from '../../auth/AuthContext'; */
 
 describe('Pruebas en <AppRouter />', () => {
     
-    const contextValue = {
+   /*  const contextValue = {
         dispatch: jest.fn(),
         user: {
             logged: false
         }
-    }
+    } */
 
 
     test('debe de mostrar login si no está autenticado', () => {

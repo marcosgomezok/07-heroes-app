@@ -7,13 +7,13 @@ import { MemoryRouter } from 'react-router-dom'; */
 
 describe('Pruebas en <DashboardRoutes />', () => {
     
-    const contextValue = {
+    /* const contextValue = {
         dispatch: jest.fn(),
         user: {
             logged: true,
             name: 'Marcos'
         }
-    }
+    } */
 
 
     test('debe mostrarse correctamente', () => {
