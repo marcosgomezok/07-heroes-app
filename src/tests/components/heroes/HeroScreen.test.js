@@ -83,6 +83,7 @@ describe('Pruebas en <HeroScreen />', () => {
 
     test('debe de llamar el redirect si el hero no existe', () => {
 
+        
         /* const wrapper = mount(
             <MemoryRouter initialEntries={['/hero/marvel-spider123123123']}>
                 <Route 
