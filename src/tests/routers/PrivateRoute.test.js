@@ -5,14 +5,17 @@ import { PrivateRoute } from './../../routers/PrivateRoute';
 
 
 describe('Prueba en <PrivateRoute />', () => {
+
+    const props = {
+        location:{
+            pathname:'/marvel'
+        }
+    } 
     
+    Storage.prototype.setItem = jest.fn();
+
     test('debe de mostrar el componente si está autenticado y guardar localStorage', () => {
         
-        const props = {
-            location:{
-                pathname:'/marvel'
-            }
-        } 
         const wrapper = shallow(
             <MemoryRouter>
 
@@ -27,6 +30,7 @@ describe('Prueba en <PrivateRoute />', () => {
 
             //React v17.0.0 no soporta mount, se necesita usar mount para este caso
             //expect(wrapper.find('span').exists()).toBe(true);
+            //expect(localStorage.setItem).toHaveBeenCalledWith('lastPath','/marvel');
     })
     
 })
